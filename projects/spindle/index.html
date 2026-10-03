@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spindle — Jop Mörs</title>
+  <meta name="description" content="A macOS desktop widget-like app shaped like a 2000s-era portable music player. It shows whatever is playing, from any app, with a working scroll wheel.">
+  <meta name="theme-color" content="#242426">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Jop Mörs — Portfolio">
+  <meta property="og:title" content="Spindle — Jop Mörs">
+  <meta property="og:description" content="A macOS desktop widget-like app shaped like a 2000s-era portable music player. It shows whatever is playing, from any app, with a working scroll wheel.">
+  <meta property="og:url" content="https://jopmors.com">
+  <meta property="og:image" content="https://jopmors.com/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../../assets/img/favicon.png">
+
+  <link rel="preload" href="../../assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap">
+
+  <link rel="stylesheet" href="../../assets/css/tailwind.css">
+  <link rel="stylesheet" href="../../assets/css/liquid-glass.css">
+  <link rel="stylesheet" href="../../assets/css/site.css">
+  <link rel="stylesheet" href="../../assets/css/phone.css" media="(max-width: 767.98px)">
+  <noscript>
+    <style>
+      [data-reveal], [data-word] { opacity: 1 !important; transform: none !important; filter: none !important; }
+      [data-hero-stage] { visibility: visible !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+  <div class="bg-m-bg text-m-text antialiased selection:bg-m-accent/25">
+    <header class="nav-shell fixed inset-x-0 top-0 z-[100] flex justify-center px-4 pt-4" data-nav data-nav-current="work">
+      <nav class="lg lg-clear flex w-full items-center justify-between gap-2 rounded-full py-1.5 pl-5 pr-1.5 text-white md:w-auto" data-nav-bar>
+        <a href="../../" class="mr-3 text-[15px] font-semibold tracking-tight" aria-label="Home">Jop Mörs</a>
+        <ul class="relative hidden items-center md:flex" data-nav-list>
+          <li aria-hidden="true" class="nav-pill pointer-events-none absolute left-0 top-0 -z-10 rounded-full bg-white/[0.1]" data-nav-pill></li>
+          <li>
+            <a href="../../#about" class="relative block rounded-full px-3.5 py-1.5 text-[13px] opacity-60 transition-opacity duration-300 hover:opacity-100" data-nav-link="about">About</a>          </li>
+          <li>
+            <a href="../../#practice" class="relative block rounded-full px-3.5 py-1.5 text-[13px] opacity-60 transition-opacity duration-300 hover:opacity-100" data-nav-link="practice">What I do</a>          </li>
+          <li>
+            <a href="../../#work" class="relative block rounded-full px-3.5 py-1.5 text-[13px] opacity-60 transition-opacity duration-300 hover:opacity-100" data-nav-link="work">Work</a>          </li>
+          <li>
+            <a href="../../#capabilities" class="relative block rounded-full px-3.5 py-1.5 text-[13px] opacity-60 transition-opacity duration-300 hover:opacity-100" data-nav-link="capabilities">Capabilities</a>          </li>
+          <li>
+            <a href="../../#background" class="relative block rounded-full px-3.5 py-1.5 text-[13px] opacity-60 transition-opacity duration-300 hover:opacity-100" data-nav-link="background">Background</a>          </li>
+        </ul>
+
+        <div class="flex items-center gap-1">
+          <a href="../../#contact" class="rounded-full bg-white px-4 py-1.5 text-[13px] font-medium text-black transition-transform duration-300 active:scale-95">Say hello</a>          <button class="grid h-8 w-8 place-items-center rounded-full md:hidden" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+            <span data-nav-icon-open><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></span>
+            <span class="hidden" data-nav-icon-close><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="nav-sheet lg lg-strong absolute inset-x-4 top-[4.25rem] rounded-[28px] p-2 text-white md:hidden" data-nav-sheet>
+        <a href="../../#about" class="block w-full rounded-[20px] px-4 py-3.5 text-left text-lg tracking-tight opacity-60" data-nav-link="about">About</a>        <a href="../../#practice" class="block w-full rounded-[20px] px-4 py-3.5 text-left text-lg tracking-tight opacity-60" data-nav-link="practice">What I do</a>        <a href="../../#work" class="block w-full rounded-[20px] px-4 py-3.5 text-left text-lg tracking-tight opacity-60" data-nav-link="work">Work</a>        <a href="../../#capabilities" class="block w-full rounded-[20px] px-4 py-3.5 text-left text-lg tracking-tight opacity-60" data-nav-link="capabilities">Capabilities</a>        <a href="../../#background" class="block w-full rounded-[20px] px-4 py-3.5 text-left text-lg tracking-tight opacity-60" data-nav-link="background">Background</a>      </div>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="px-6 pb-16 pt-36 md:px-12 md:pb-24 md:pt-44">
+        <div class="mx-auto max-w-6xl">
+          <a href="../../#work" class="inline-flex items-center gap-2 text-sm text-m-label link-accent">← All work</a>
+
+          <div class="mt-12 grid items-center gap-16 md:grid-cols-[1.2fr_0.8fr] md:gap-10">
+            <div class="min-w-0">
+              <div class="flex flex-wrap items-center gap-5" data-reveal>
+                <img src="../../assets/img/projects/spindle/icon.png" alt="Spindle app icon" width="88" height="88" class="h-20 w-20 md:h-[88px] md:w-[88px]">
+                <span class="lg inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium tracking-wide text-m-label">
+                  <span class="h-1.5 w-1.5 rounded-full bg-[#30d158]"></span>
+                  Launched · v2.5.0                </span>
+              </div>
+
+              <h1 class="mt-10 text-[22vw] font-semibold leading-[0.85] tracking-[-0.065em] md:text-[min(10vw,9rem)]" data-reveal>Spindle.</h1>
+              <p class="mt-8 max-w-2xl text-balance text-2xl font-medium leading-snug tracking-[-0.02em] md:text-3xl" data-reveal>
+                A macOS desktop widget shaped like a 2000s-era portable music player.
+                <span class="text-m-muted">It shows whatever is playing, from any app — the album cover filling the screen, the title laid over it, and a working scroll wheel.</span>
+              </p>
+
+              <div class="mt-10 flex flex-wrap items-center gap-3" data-reveal>
+                <a href="https://github.com/JopMors/Spindle/releases/latest" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 btn-accent rounded-full px-6 py-3 text-sm font-medium transition-transform duration-300 active:scale-[0.97]">Download for Mac <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                <a href="https://github.com/JopMors/Spindle" target="_blank" rel="noopener noreferrer" class="lg lg-press inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>View on GitHub</a>
+              </div>
+            </div>
+
+            <div data-reveal="right">
+
+      <div class="ipod-stage mx-auto w-[min(76vw,380px)] md:mr-0 md:w-[min(30vw,420px)]" data-ipod role="group" aria-label="Spindle, a working demo player">
+        <div class="ipod lg" data-ipod-body>
+          <div class="ipod__sheen"></div>
+          <div class="ipod__screen" data-ipod-screen>
+            <div class="ipod__art" data-ipod-art></div>
+            <div class="ipod__status"><svg viewBox="0 0 16 12" fill="currentColor" aria-hidden="true"><rect x="0" y="7" width="2.6" height="5" rx=".6"/><rect x="4.5" y="4.6" width="2.6" height="7.4" rx=".6"/><rect x="9" y="2.2" width="2.6" height="9.8" rx=".6"/><rect x="13.4" y="0" width="2.6" height="12" rx=".6"/></svg><span class="ipod__state" data-ipod-state><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></span></div>
+            <div class="ipod__meta" data-ipod-meta>
+              <p class="ipod__title" data-ipod-title aria-live="polite">Night Drive</p>
+              <p class="ipod__artist" data-ipod-artist>Spindle</p>
+              <div class="ipod__seek" data-ipod-seek>
+                <div class="ipod__progress"><span style="width: 33%" data-ipod-progress></span></div>
+                <div class="ipod__times"><span data-ipod-elapsed>1:24</span><span data-ipod-remaining>-2:51</span></div>
+              </div>
+              <div class="ipod__volume" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/></svg><div class="ipod__progress"><span data-ipod-volume></span></div><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 9h4l5-4v14l-5-4H3z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            </div>
+            <div class="ipod__glare"></div>
+            <div class="ipod__list" data-ipod-list>
+              <p class="ipod__list-title" data-ipod-list-title></p>
+              <ul data-ipod-list-items></ul>
+            </div>
+          </div>
+          <div class="ipod__wheel lg" data-ipod-wheel data-lenis-prevent-wheel tabindex="0" aria-label="Click wheel. Scroll or drag around it, or use the arrow keys.">
+            <button type="button" class="ipod__menu" data-ipod-action="menu" aria-label="Menu">MENU</button>
+            <button type="button" class="ipod__previous" data-ipod-action="previous" aria-label="Previous track"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h2.2v14H6zM20 5v14l-10.5-7z"/></svg></button>
+            <button type="button" class="ipod__next" data-ipod-action="next" aria-label="Next track"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.8 5H18v14h-2.2zM4 5v14l10.5-7z"/></svg></button>
+            <button type="button" class="ipod__note" data-ipod-action="now-playing" aria-label="Now playing"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="12.6" y="4" width="2.1" height="12.5" rx=".5"/><path d="M12.6 4h6.2v3.1h-6.2z"/><ellipse cx="10.3" cy="16.6" rx="3.6" ry="2.8" transform="rotate(-22 10.3 16.6)"/></svg></button>
+            <button type="button" class="ipod__center lg" data-ipod-action="select" aria-label="Play, pause or select"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg></button>
+          </div>
+        </div>
+      </div>            </div>
+          </div>
+
+          <dl class="mt-16 grid grid-cols-2 gap-x-8 gap-y-6 border-t border-m-line/10 pt-8 md:grid-cols-5">
+            <div>
+              <dt class="text-xs font-medium uppercase tracking-[0.18em] text-m-label">Platform</dt>
+              <dd class="mt-2 text-lg tracking-tight">macOS 14 or later</dd>
+            </div>
+            <div>
+              <dt class="text-xs font-medium uppercase tracking-[0.18em] text-m-label">Runs on</dt>
+              <dd class="mt-2 text-lg tracking-tight">Apple silicon &amp; Intel</dd>
+            </div>
+            <div>
+              <dt class="text-xs font-medium uppercase tracking-[0.18em] text-m-label">Version</dt>
+              <dd class="mt-2 text-lg tracking-tight">2.5.0</dd>
+            </div>
+            <div>
+              <dt class="text-xs font-medium uppercase tracking-[0.18em] text-m-label">Built with</dt>
+              <dd class="mt-2 text-lg tracking-tight">Swift</dd>
+            </div>
+            <div>
+              <dt class="text-xs font-medium uppercase tracking-[0.18em] text-m-label">License</dt>
+              <dd class="mt-2 text-lg tracking-tight">MIT</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- The skins -->
+      <section class="px-3 pb-24 md:px-6 md:pb-32">
+        <figure class="lg mx-auto max-w-5xl p-3 md:p-5" style="transform: scale(0.92); border-radius: 40px" data-scale-in>
+          <img src="../../assets/img/projects/spindle/skins.png" alt="Four of the nine Spindle skins" class="w-full rounded-[24px]">
+          <figcaption class="mt-4 px-2 pb-1 text-sm text-m-muted">Four of the nine skins: Mini Silver, Mini Blue, Mini Pink and Mini Green.</figcaption>
+        </figure>
+      </section>
+
+      <!-- What it does -->
+      <section class="px-6 py-24 md:px-12 md:py-36">
+        <div class="mx-auto max-w-6xl">
+          <p class="mb-6 flex items-center gap-3 text-[13px] font-medium uppercase tracking-[0.2em] text-m-label"><span class="h-px w-8 bg-m-label/50"></span>What it does</p>          <h2 class="max-w-4xl text-5xl font-semibold tracking-[-0.045em] md:text-7xl" data-reveal>Now playing, <span class="text-m-muted font-[family-name:var(--font-serif)] font-normal italic">from anything.</span></h2>
+          <div class="plain-grid mt-16 grid md:grid-cols-3">
+            <div style="--reveal-delay: 0s" data-reveal>
+              <span class="font-mono text-sm text-m-muted">01</span>
+              <h3 class="mt-3 text-2xl font-semibold tracking-[-0.03em]">Any app, not just Music</h3>
+              <p class="mt-3 leading-relaxed text-m-muted">It reads what is playing from the system media controls, so Music, Spotify, Safari, Chrome, IINA and VLC all show up — artwork included.</p>
+            </div>
+            <div style="--reveal-delay: 0.08s" data-reveal>
+              <span class="font-mono text-sm text-m-muted">02</span>
+              <h3 class="mt-3 text-2xl font-semibold tracking-[-0.03em]">A click wheel that works</h3>
+              <p class="mt-3 leading-relaxed text-m-muted">Turn it to change the volume or move through the menu; the centre plays and pauses. Every step ticks — the sound is synthesised, not sampled.</p>
+            </div>
+            <div style="--reveal-delay: 0.16s" data-reveal>
+              <span class="font-mono text-sm text-m-muted">03</span>
+              <h3 class="mt-3 text-2xl font-semibold tracking-[-0.03em]">Lives on your desktop</h3>
+              <p class="mt-3 leading-relaxed text-m-muted">Not a WidgetKit widget: a borderless panel pinned to the wallpaper behind your windows, sized to the macOS widget grid, on every Space.</p>
+            </div>
+            <div style="--reveal-delay: 0s" data-reveal>
+              <span class="font-mono text-sm text-m-muted">04</span>
+              <h3 class="mt-3 text-2xl font-semibold tracking-[-0.03em]">Your library, browsable</h3>
+              <p class="mt-3 leading-relaxed text-m-muted">Playlists, Artists, Albums and Songs from Apple Music — or from Spotify through its Web API, signed in with PKCE and kept in your keychain.</p>
+            </div>
+            <div style="--reveal-delay: 0.08s" data-reveal>
+              <span class="font-mono text-sm text-m-muted">05</span>
+              <h3 class="mt-3 text-2xl font-semibold tracking-[-0.03em]">Nine skins</h3>
+              <p class="mt-3 leading-relaxed text-m-muted">Including Liquid Glass and Frosted Glass, plus one you colour yourself with a hue wheel and sliders for opacity, borders and blur.</p>
+            </div>
+            <div style="--reveal-delay: 0.16s" data-reveal>
+              <span class="font-mono text-sm text-m-muted">06</span>
+              <h3 class="mt-3 text-2xl font-semibold tracking-[-0.03em]">Asks for very little</h3>
+              <p class="mt-3 leading-relaxed text-m-muted">No Screen Recording, Accessibility or Full Disk Access. It only goes online to talk to Spotify — and only if you connect it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Controls -->
+      <section class="px-6 py-24 md:px-12 md:py-36">
+        <div class="mx-auto max-w-6xl">
+          <p class="mb-6 flex items-center gap-3 text-[13px] font-medium uppercase tracking-[0.2em] text-m-label"><span class="h-px w-8 bg-m-label/50"></span>Controls</p>          <h2 class="text-5xl font-semibold tracking-[-0.045em] md:text-7xl" data-reveal>The wheel, <span class="text-m-muted font-[family-name:var(--font-serif)] font-normal italic">faithfully.</span></h2>
+          <p class="mt-6 max-w-2xl text-lg leading-relaxed text-m-muted" data-reveal>Drag around the ring or simply scroll anywhere on the widget. Nothing is wheel-only: the screen is a control too, the volume bar can be dragged, and the scrubber seeks. <span class="text-m-text">The player at the top of this page works the same way — try it.</span></p>
+
+          <div class="mt-16 grid items-center gap-14 md:grid-cols-[0.8fr_1.2fr] md:gap-20">
+            <svg class="wheel-diagram mx-auto w-full" viewBox="0 0 300 480" role="img" aria-label="Spindle's controls, numbered to match the list" data-reveal>
+              <rect x="20" y="10" width="260" height="460" rx="36" class="wheel-diagram__body"/>
+              <rect x="44" y="34" width="212" height="156" rx="14" class="wheel-diagram__screen"/>
+              <rect x="64" y="128" width="120" height="9" rx="3" class="wheel-diagram__text"/>
+              <rect x="64" y="144" width="72" height="7" rx="3" class="wheel-diagram__text"/>
+              <rect x="64" y="164" width="172" height="4" rx="2" class="wheel-diagram__track"/>
+              <rect x="64" y="164" width="54" height="4" rx="2" class="wheel-diagram__progress"/>
+              <circle cx="150" cy="330" r="100" class="wheel-diagram__wheel"/>
+              <circle cx="150" cy="330" r="38" class="wheel-diagram__button"/>
+              <path d="M 226 252 A 112 112 0 0 1 258 298" class="wheel-diagram__turn"/>
+              <path d="M 252 290 L 259 301 L 264 288" class="wheel-diagram__turn"/>
+              <g class="wheel-diagram__marker"><circle cx="262" cy="238" r="12"/><text x="262" y="238">1</text></g>
+              <g class="wheel-diagram__marker"><circle cx="150" cy="330" r="12"/><text x="150" y="330">2</text></g>
+              <g class="wheel-diagram__marker"><circle cx="150" cy="262" r="12"/><text x="150" y="262">3</text></g>
+              <g class="wheel-diagram__marker"><circle cx="82" cy="330" r="12"/><text x="82" y="330">4</text></g>
+              <g class="wheel-diagram__marker"><circle cx="218" cy="330" r="12"/><text x="218" y="330">4</text></g>
+              <g class="wheel-diagram__marker"><circle cx="150" cy="398" r="12"/><text x="150" y="398">5</text></g>
+              <g class="wheel-diagram__marker"><circle cx="150" cy="100" r="12"/><text x="150" y="100">6</text></g>
+              <g class="wheel-diagram__marker"><circle cx="118" cy="166" r="12"/><text x="118" y="166">7</text></g>
+            </svg>
+            <ol class="controls-legend">
+              <li style="--reveal-delay: 0s" data-reveal>
+                <span class="wheel-diagram__key font-mono">1</span>
+                <div>
+                  <p class="font-medium tracking-tight">Scroll anywhere, or turn the wheel</p>
+                  <p class="mt-1 text-sm leading-relaxed text-m-muted">Now playing: <span class="text-m-text/80">Volume</span> · In a menu: <span class="text-m-text/80">Moves the highlight</span></p>
+                </div>
+              </li>
+              <li style="--reveal-delay: 0.04s" data-reveal>
+                <span class="wheel-diagram__key font-mono">2</span>
+                <div>
+                  <p class="font-medium tracking-tight">Centre button</p>
+                  <p class="mt-1 text-sm leading-relaxed text-m-muted">Now playing: <span class="text-m-text/80">Play / pause</span> · In a menu: <span class="text-m-text/80">Select</span></p>
+                </div>
+              </li>
+              <li style="--reveal-delay: 0.08s" data-reveal>
+                <span class="wheel-diagram__key font-mono">3</span>
+                <div>
+                  <p class="font-medium tracking-tight">MENU</p>
+                  <p class="mt-1 text-sm leading-relaxed text-m-muted">Now playing: <span class="text-m-text/80">Opens the menu</span> · In a menu: <span class="text-m-text/80">Back up one level</span></p>
+                </div>
+              </li>
+              <li style="--reveal-delay: 0.12s" data-reveal>
+                <span class="wheel-diagram__key font-mono">4</span>
+                <div>
+                  <p class="font-medium tracking-tight">Right / left of the wheel</p>
+                  <p class="mt-1 text-sm leading-relaxed text-m-muted">Now playing: <span class="text-m-text/80">Next / previous track</span> · In a menu: <span class="text-m-text/80">Next / previous track</span></p>
+                </div>
+              </li>
+              <li style="--reveal-delay: 0.16s" data-reveal>
+                <span class="wheel-diagram__key font-mono">5</span>
+                <div>
+                  <p class="font-medium tracking-tight">Bottom of the wheel</p>
+                  <p class="mt-1 text-sm leading-relaxed text-m-muted">Now playing: <span class="text-m-text/80">Opens the player you pick</span> · In a menu: <span class="text-m-text/80">Same</span></p>
+                </div>
+              </li>
+              <li style="--reveal-delay: 0.2s" data-reveal>
+                <span class="wheel-diagram__key font-mono">6</span>
+                <div>
+                  <p class="font-medium tracking-tight">Click the screen</p>
+                  <p class="mt-1 text-sm leading-relaxed text-m-muted">Now playing: <span class="text-m-text/80">Opens the menu</span> · In a menu: <span class="text-m-text/80">Selects that row</span></p>
+                </div>
+              </li>
+              <li style="--reveal-delay: 0.24s" data-reveal>
+                <span class="wheel-diagram__key font-mono">7</span>
+                <div>
+                  <p class="font-medium tracking-tight">Drag the scrubber</p>
+                  <p class="mt-1 text-sm leading-relaxed text-m-muted">Now playing: <span class="text-m-text/80">Jumps to that point</span></p>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <!-- Engineering -->
+      <section class="px-6 py-24 md:px-12 md:py-36">
+        <div class="mx-auto grid max-w-6xl gap-14 md:grid-cols-[1fr_1.15fr] md:gap-20">
+          <div>
+            <p class="mb-6 flex items-center gap-3 text-[13px] font-medium uppercase tracking-[0.2em] text-m-label"><span class="h-px w-8 bg-m-label/50"></span>Under the hood</p>            <h2 class="text-5xl font-semibold tracking-[-0.045em] md:text-6xl" data-reveal>How it reads <span class="text-m-muted font-[family-name:var(--font-serif)] font-normal italic">now playing.</span></h2>
+            <div class="mt-8 space-y-5 text-lg leading-relaxed text-m-muted" data-reveal>
+              <p>Since macOS 15.4, the private MediaRemote framework returns an empty dictionary to any process that isn't an Apple platform binary — an ordinary app can no longer simply ask what's playing.</p>
+              <p>Spindle ships a small library and loads it inside <code class="rounded-md bg-m-text/[0.08] px-1.5 py-0.5 font-mono text-[0.9em] text-m-text">/usr/bin/perl</code>, which is a platform binary, using the technique from <a href="https://github.com/ungive/mediaremote-adapter" target="_blank" rel="noopener noreferrer" class="text-m-text underline decoration-m-line/30 underline-offset-4 hover:decoration-m-text">ungive/mediaremote-adapter</a>. It subscribes to MediaRemote's change notifications and streams JSON back to the app — push-based and deduplicated, so idle playback costs nothing.</p>
+              <p>The elapsed time it reports is a reading taken at a timestamp, not a live value, so the scrubber extrapolates from the timestamp instead of trusting the number. If a future macOS closes this route, Spindle falls back to AppleScript for Music and Spotify.</p>
+            </div>
+          </div>
+
+          <div class="lg self-start rounded-[28px] p-2 md:p-3" data-reveal>
+            <p class="px-5 pb-2 pt-4 text-xs uppercase tracking-[0.15em] text-m-muted">Tested on macOS 15.4+</p>
+            <div class="flex items-start justify-between gap-6 border-t border-m-line/[0.08] px-5 py-4">
+              <span class="tracking-tight">Reading now-playing directly from the app<span class="mt-1 block font-mono text-xs text-m-muted">0 keys</span></span>
+              <span class="inline-flex shrink-0 items-center gap-2 rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-muted">
+                <span class="h-1.5 w-1.5 rounded-full bg-m-muted/60"></span>
+                Blocked              </span>
+            </div>
+            <div class="flex items-start justify-between gap-6 border-t border-m-line/[0.08] px-5 py-4">
+              <span class="tracking-tight">Reading it from inside /usr/bin/perl<span class="mt-1 block font-mono text-xs text-m-muted">31 keys, artwork included</span></span>
+              <span class="inline-flex shrink-0 items-center gap-2 rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text">
+                <span class="h-1.5 w-1.5 rounded-full bg-[#30d158]"></span>
+                Works              </span>
+            </div>
+            <div class="flex items-start justify-between gap-6 border-t border-m-line/[0.08] px-5 py-4">
+              <span class="tracking-tight">Sending play, pause and skip commands</span>
+              <span class="inline-flex shrink-0 items-center gap-2 rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text">
+                <span class="h-1.5 w-1.5 rounded-full bg-[#30d158]"></span>
+                Works              </span>
+            </div>
+            <div class="flex items-start justify-between gap-6 border-t border-m-line/[0.08] px-5 py-4">
+              <span class="tracking-tight">Setting shuffle and repeat</span>
+              <span class="inline-flex shrink-0 items-center gap-2 rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text">
+                <span class="h-1.5 w-1.5 rounded-full bg-[#30d158]"></span>
+                Works              </span>
+            </div>
+            <div class="flex items-start justify-between gap-6 border-t border-m-line/[0.08] px-5 py-4">
+              <span class="tracking-tight">Seeking</span>
+              <span class="inline-flex shrink-0 items-center gap-2 rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text">
+                <span class="h-1.5 w-1.5 rounded-full bg-[#30d158]"></span>
+                Works              </span>
+            </div>
+            <div class="flex items-start justify-between gap-6 border-t border-m-line/[0.08] px-5 py-4">
+              <span class="tracking-tight">Asking which app is playing</span>
+              <span class="inline-flex shrink-0 items-center gap-2 rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-muted">
+                <span class="h-1.5 w-1.5 rounded-full bg-m-muted/60"></span>
+                Blocked              </span>
+            </div>
+            <div class="flex items-start justify-between gap-6 border-t border-m-line/[0.08] px-5 py-4">
+              <span class="tracking-tight">Reading shuffle and repeat back</span>
+              <span class="inline-flex shrink-0 items-center gap-2 rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-muted">
+                <span class="h-1.5 w-1.5 rounded-full bg-m-muted/60"></span>
+                No usable API              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Get it -->
+      <section class="px-3 pb-32 pt-12 md:px-6">
+        <div class="lg mx-auto max-w-6xl rounded-[28px] px-6 py-16 md:px-14 md:py-20" data-reveal>
+          <div class="grid grid-cols-[minmax(0,1fr)] gap-12 md:grid-cols-[1.1fr_1fr] md:items-end">
+            <div class="min-w-0">
+              <img src="../../assets/img/projects/spindle/icon.png" alt="" width="64" height="64" loading="lazy" class="h-16 w-16">
+              <h2 class="mt-8 text-5xl font-semibold tracking-[-0.045em] md:text-7xl">Get Spindle.</h2>
+              <p class="mt-4 text-lg text-m-muted">Free and open source · macOS 14 or later · Apple silicon &amp; Intel</p>
+              <div class="mt-8 flex flex-wrap items-center gap-3">
+                <a href="https://github.com/JopMors/Spindle/releases/latest" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 btn-accent rounded-full px-6 py-3 text-sm font-medium transition-transform duration-300 active:scale-[0.97]">Download for Mac <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                <a href="https://github.com/JopMors/Spindle" target="_blank" rel="noopener noreferrer" class="lg lg-press inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>Source code</a>
+              </div>
+            </div>
+            <div class="min-w-0 text-sm leading-relaxed text-m-muted">
+              <p class="font-medium text-m-label">First launch</p>
+              <p class="mt-2">Spindle isn't signed with a paid Apple Developer ID, so macOS blocks it the first time. Open <span class="text-m-text">System Settings → Privacy &amp; Security</span>, click <span class="text-m-text">Open Anyway</span>, and confirm. You only do this once. Or in Terminal:</p>
+              <pre class="mt-4 overflow-x-auto rounded-2xl bg-black/30 px-4 py-3 font-mono text-xs text-m-text">xattr -dr com.apple.quarantine "/Applications/Spindle.app"</pre>
+            </div>
+          </div>
+        </div>
+        <p class="mx-auto mt-8 max-w-6xl px-3 text-xs leading-relaxed text-m-muted md:px-0">Spindle is an independent project and is not affiliated with, endorsed by, or connected to Apple Inc. All artwork is original; product names belong to their respective owners.</p>
+      </section>
+    </main>
+    <footer class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 border-t border-m-line/10 px-6 pb-24 pt-6 text-sm text-m-muted md:px-12 xl:px-0">
+      <a href="../../#work" class="inline-flex items-center gap-2 text-m-label link-accent">← All work</a>
+      <span>© 2026 Jop Mörs</span>
+    </footer>
+  </div>
+  <script type="module" src="../../assets/js/main.js"></script>
+</body>
+</html>

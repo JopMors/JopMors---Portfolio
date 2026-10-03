@@ -1,0 +1,78 @@
+/*
+ * Phone layout. Loaded only below the md breakpoint (see the media attribute in
+ * includes/head.php), so nothing here can reach the desktop site. assets/js/main.js
+ * skips the matching scroll scripts (hero zoom, statement words, What I do drawing).
+ */
+
+/* ---------- Hero: a still, full-screen photo instead of the scroll-driven zoom ---------- */
+#top {
+  height: 100svh;
+}
+#top [data-hero-stage] {
+  position: relative;
+  visibility: visible;
+}
+#top [data-hero-photo] {
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  transform: none;
+}
+#top [data-hero-photo] img {
+  object-position: 42% 55%;
+}
+#top [data-hero-lid],
+#top [data-hero-blur],
+#top [data-hero-beat],
+#top [data-hero-hint] {
+  display: none;
+}
+#top [data-hero-title] {
+  bottom: 8svh;
+}
+/* The name wraps to two lines here; open them up so the p of "Jop" clears the ö of "Mörs". */
+#top [data-hero-title] h1 {
+  line-height: 0.95;
+}
+
+/* A deeper shade under the name, so it reads over the laptop. */
+#top [data-hero-grade] {
+  background: linear-gradient(to top, rgb(0 0 0 / 0.6), transparent 55%);
+}
+
+/* ---------- Statement: the sentence is simply there, no word-by-word lighting ---------- */
+#statement [data-word] {
+  opacity: 1 !important;
+}
+
+/* ---------- What I do: compact tinted cards, no line drawing ---------- */
+#practice {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+#practice [data-field-panel] {
+  display: none;
+}
+#practice [data-capability] {
+  position: relative;
+  min-height: 0;
+  margin-bottom: 0.875rem;
+  padding: 1.75rem 1.5rem 1.875rem;
+  overflow: hidden;
+  border: 0;
+  border-radius: 28px;
+  background:
+    radial-gradient(120% 70% at 100% 0%, rgb(var(--tint, var(--m-text)) / 0.14), transparent 65%),
+    rgb(var(--m-surface));
+}
+#practice [data-capability] h3 {
+  margin-top: 0.75rem;
+  font-size: 2.75rem;
+  line-height: 1;
+}
+#practice [data-capability] p {
+  margin-top: 1rem;
+}
+#practice [data-capability] p:first-of-type {
+  font-size: 1.625rem;
+}

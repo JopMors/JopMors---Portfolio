@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jop Mörs — Developer · Designer · Problem Solver</title>
+  <meta name="description" content="I build modern digital experiences with a focus on design, performance and usability.">
+  <meta name="theme-color" content="#242426">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Jop Mörs — Portfolio">
+  <meta property="og:title" content="Jop Mörs — Developer · Designer · Problem Solver">
+  <meta property="og:description" content="I build modern digital experiences with a focus on design, performance and usability.">
+  <meta property="og:url" content="https://jopmors.com">
+  <meta property="og:image" content="https://jopmors.com/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+  <link rel="preload" href="assets/fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap">
+
+  <link rel="stylesheet" href="assets/css/tailwind.css">
+  <link rel="stylesheet" href="assets/css/liquid-glass.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/phone.css" media="(max-width: 767.98px)">
+  <noscript>
+    <style>
+      [data-reveal], [data-word] { opacity: 1 !important; transform: none !important; filter: none !important; }
+      [data-hero-stage] { visibility: visible !important; }
+    </style>
+  </noscript>
+</head>
+<body>
+  <div class="bg-m-bg text-m-text antialiased selection:bg-m-accent/25">
+    <header class="nav-shell fixed inset-x-0 top-0 z-[100] flex justify-center px-4 pt-4" data-nav>
+      <nav class="lg lg-clear flex w-full items-center justify-between gap-2 rounded-full py-1.5 pl-5 pr-1.5 text-white md:w-auto" data-nav-bar>
+        <button class="mr-3 text-[15px] font-semibold tracking-tight" data-scroll-to="top" aria-label="Back to top">Jop Mörs</button>
+        <ul class="relative hidden items-center md:flex" data-nav-list>
+          <li aria-hidden="true" class="nav-pill pointer-events-none absolute left-0 top-0 -z-10 rounded-full bg-white/[0.1]" data-nav-pill></li>
+          <li>
+            <button class="relative block rounded-full px-3.5 py-1.5 text-[13px] opacity-60 transition-opacity duration-300 hover:opacity-100" data-scroll-to="about" data-nav-link="about">About</button>          </li>
+          <li>
+            <button class="relative block rounded-full px-3.5 py-1.5 text-[13px] opacity-60 transition-opacity duration-300 hover:opacity-100" data-scroll-to="practice" data-nav-link="practice">What I do</button>          </li>
+          <li>
+            <button class="relative block rounded-full px-3.5 py-1.5 text-[13px] opacity-60 transition-opacity duration-300 hover:opacity-100" data-scroll-to="work" data-nav-link="work">Work</button>          </li>
+          <li>
+            <button class="relative block rounded-full px-3.5 py-1.5 text-[13px] opacity-60 transition-opacity duration-300 hover:opacity-100" data-scroll-to="capabilities" data-nav-link="capabilities">Capabilities</button>          </li>
+          <li>
+            <button class="relative block rounded-full px-3.5 py-1.5 text-[13px] opacity-60 transition-opacity duration-300 hover:opacity-100" data-scroll-to="background" data-nav-link="background">Background</button>          </li>
+        </ul>
+
+        <div class="flex items-center gap-1">
+          <button class="rounded-full bg-white px-4 py-1.5 text-[13px] font-medium text-black transition-transform duration-300 active:scale-95" data-scroll-to="contact">Say hello</button>          <button class="grid h-8 w-8 place-items-center rounded-full md:hidden" aria-label="Toggle menu" aria-expanded="false" data-nav-toggle>
+            <span data-nav-icon-open><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></span>
+            <span class="hidden" data-nav-icon-close><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></span>
+          </button>
+        </div>
+      </nav>
+
+      <div class="nav-sheet lg lg-strong absolute inset-x-4 top-[4.25rem] rounded-[28px] p-2 text-white md:hidden" data-nav-sheet>
+        <button class="block w-full rounded-[20px] px-4 py-3.5 text-left text-lg tracking-tight opacity-60" data-scroll-to="about" data-nav-link="about">About</button>        <button class="block w-full rounded-[20px] px-4 py-3.5 text-left text-lg tracking-tight opacity-60" data-scroll-to="practice" data-nav-link="practice">What I do</button>        <button class="block w-full rounded-[20px] px-4 py-3.5 text-left text-lg tracking-tight opacity-60" data-scroll-to="work" data-nav-link="work">Work</button>        <button class="block w-full rounded-[20px] px-4 py-3.5 text-left text-lg tracking-tight opacity-60" data-scroll-to="capabilities" data-nav-link="capabilities">Capabilities</button>        <button class="block w-full rounded-[20px] px-4 py-3.5 text-left text-lg tracking-tight opacity-60" data-scroll-to="background" data-nav-link="background">Background</button>      </div>
+    </header>
+    <main>
+      <section id="top" aria-label="Workspace" data-tone="dark" class="relative h-[400svh] bg-black md:h-[460svh]" data-hero>
+        <div class="invisible sticky top-0 h-[100svh] overflow-hidden bg-black" data-hero-stage>
+          <div class="absolute left-0 top-0 origin-top-left will-change-transform" style="width: 2048px; height: 1152px" data-hero-photo>
+            <img src="assets/img/workspace/master.webp" alt="A desk facing the Golden Gate Bridge at dusk, a MacBook Pro open on it" fetchpriority="high" class="absolute inset-0 h-full w-full object-cover">
+            <div class="absolute inset-0 opacity-0" data-hero-blur>
+              <img src="assets/img/workspace/master-blur.webp" alt="" class="absolute inset-0 h-full w-full object-cover">
+            </div>
+          </div>
+
+          <div class="absolute left-0 top-0 origin-top-left rounded-[7px] bg-[#070708] shadow-[inset_0_0_0_0.6px_rgba(255,255,255,0.16)]" style="width: 378px; height: 251px" data-hero-lid>
+            <div class="absolute overflow-hidden rounded-[1.5px] bg-m-bg" style="left: 9px; top: 16px; width: 360px; height: 230px">
+              <div class="relative origin-top-left" style="width: 1200px; height: 767px; transform: scale(0.3)">
+                <div class="flex flex-col bg-m-bg font-mono text-white h-full w-full">
+                  <div class="flex h-7 shrink-0 items-center justify-between bg-black/30 px-4 font-sans text-[13px] text-white/85">
+                    <div class="flex items-center gap-5">
+                      <span class="font-semibold">●</span>
+                      <span class="font-semibold">Code</span>
+                      <span>File</span>
+                      <span>Edit</span>
+                      <span>Selection</span>
+                      <span>View</span>
+                      <span>Go</span>
+                      <span>Window</span>
+                    </div>
+                    <span class="text-white/70">Jop Mörs</span>
+                  </div>
+
+                  <div class="flex min-h-0 flex-1">
+                    <aside class="flex w-56 shrink-0 flex-col gap-0.5 border-r border-white/[0.06] bg-black/15 px-3 py-4 text-[13px] text-white/55">
+                      <span class="mb-3 px-1 text-[11px] uppercase tracking-[0.16em] text-white/35">Explorer</span>
+                      <span style="padding-left: 4px" class="truncate rounded-md py-1 pr-2 text-white/70">▾ my-website</span>
+                      <span style="padding-left: 16px" class="truncate rounded-md py-1 pr-2 text-white/70">▾ app</span>
+                      <span style="padding-left: 28px" class="truncate rounded-md py-1 pr-2 text-white/70">▾ components</span>
+                      <span style="padding-left: 28px" class="truncate rounded-md py-1 pr-2 text-white/70">▾ pages</span>
+                      <span style="padding-left: 40px" class="truncate rounded-md py-1 pr-2 bg-white/[0.08] text-white">index.html</span>
+                      <span style="padding-left: 40px" class="truncate rounded-md py-1 pr-2">projects.html</span>
+                      <span style="padding-left: 40px" class="truncate rounded-md py-1 pr-2">contact.html</span>
+                      <span style="padding-left: 16px" class="truncate rounded-md py-1 pr-2 text-white/70">▾ styles</span>
+                      <span style="padding-left: 28px" class="truncate rounded-md py-1 pr-2">globals.css</span>
+                      <span style="padding-left: 28px" class="truncate rounded-md py-1 pr-2">variables.css</span>
+                      <span style="padding-left: 16px" class="truncate rounded-md py-1 pr-2">package.json</span>
+                      <span style="padding-left: 16px" class="truncate rounded-md py-1 pr-2">README.md</span>
+                    </aside>
+
+                    <div class="flex min-w-0 flex-1 flex-col">
+                      <div class="flex items-center border-b border-white/[0.06] bg-black/15 text-[13px]">
+                        <span class="border-r border-white/[0.06] bg-m-bg px-5 py-2.5 text-white/90">index.html</span>
+                      </div>
+                      <pre class="flex-1 overflow-hidden px-3 py-5 text-[15px] leading-[1.8]" data-code><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">1</span><span class="min-w-0 truncate" style="padding-left: 0em" data-line-content><span class="text-[#8b949e] italic" data-token>&lt;!DOCTYPE html&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">2</span><span class="min-w-0 truncate" style="padding-left: 0em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;</span><span class="text-[#ff7b72]" data-token>html</span><span class="text-[#ffa657]" data-token> lang</span><span class="text-[#c9d1d9]" data-token>=</span><span class="text-[#a5d6ff]" data-token>&quot;en&quot;</span><span class="text-[#c9d1d9]" data-token>&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">3</span><span class="min-w-0 truncate" style="padding-left: 1.5em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;</span><span class="text-[#ff7b72]" data-token>head</span><span class="text-[#c9d1d9]" data-token>&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">4</span><span class="min-w-0 truncate" style="padding-left: 3em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;</span><span class="text-[#ff7b72]" data-token>meta</span><span class="text-[#ffa657]" data-token> charset</span><span class="text-[#c9d1d9]" data-token>=</span><span class="text-[#a5d6ff]" data-token>&quot;UTF-8&quot;</span><span class="text-[#c9d1d9]" data-token>&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">5</span><span class="min-w-0 truncate" style="padding-left: 3em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;</span><span class="text-[#ff7b72]" data-token>title</span><span class="text-[#c9d1d9]" data-token>&gt;</span><span class="text-[#e6edf3]" data-token>Jop Mörs — Developer · Designer · Problem Solver</span><span class="text-[#c9d1d9]" data-token>&lt;/</span><span class="text-[#ff7b72]" data-token>title</span><span class="text-[#c9d1d9]" data-token>&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">6</span><span class="min-w-0 truncate" style="padding-left: 1.5em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;/</span><span class="text-[#ff7b72]" data-token>head</span><span class="text-[#c9d1d9]" data-token>&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">7</span><span class="min-w-0 truncate" style="padding-left: 1.5em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;</span><span class="text-[#ff7b72]" data-token>body</span><span class="text-[#c9d1d9]" data-token>&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">8</span><span class="min-w-0 truncate" style="padding-left: 3em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;</span><span class="text-[#ff7b72]" data-token>main</span><span class="text-[#ffa657]" data-token> class</span><span class="text-[#c9d1d9]" data-token>=</span><span class="text-[#a5d6ff]" data-token>&quot;portfolio&quot;</span><span class="text-[#c9d1d9]" data-token>&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">9</span><span class="min-w-0 truncate" style="padding-left: 4.5em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;</span><span class="text-[#ff7b72]" data-token>h1</span><span class="text-[#c9d1d9]" data-token>&gt;</span><span class="text-[#e6edf3]" data-token>Developer. Designer. Problem Solver.</span><span class="text-[#c9d1d9]" data-token>&lt;/</span><span class="text-[#ff7b72]" data-token>h1</span><span class="text-[#c9d1d9]" data-token>&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">10</span><span class="min-w-0 truncate" style="padding-left: 4.5em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;</span><span class="text-[#ff7b72]" data-token>p</span><span class="text-[#c9d1d9]" data-token>&gt;</span><span class="text-[#e6edf3]" data-token>I build modern digital experiences with a focus on design, performance and usability.</span><span class="text-[#c9d1d9]" data-token>&lt;/</span><span class="text-[#ff7b72]" data-token>p</span><span class="text-[#c9d1d9]" data-token>&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">11</span><span class="min-w-0 truncate" style="padding-left: 4.5em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;</span><span class="text-[#ff7b72]" data-token>section</span><span class="text-[#ffa657]" data-token> id</span><span class="text-[#c9d1d9]" data-token>=</span><span class="text-[#a5d6ff]" data-token>&quot;work&quot;</span><span class="text-[#c9d1d9]" data-token>&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">12</span><span class="min-w-0 truncate" style="padding-left: 6em" data-line-content><span class="text-[#8b949e] italic" data-token>&lt;!-- 4 projects in development --&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">13</span><span class="min-w-0 truncate" style="padding-left: 4.5em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;/</span><span class="text-[#ff7b72]" data-token>section</span><span class="text-[#c9d1d9]" data-token>&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">14</span><span class="min-w-0 truncate" style="padding-left: 3em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;/</span><span class="text-[#ff7b72]" data-token>main</span><span class="text-[#c9d1d9]" data-token>&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">15</span><span class="min-w-0 truncate" style="padding-left: 1.5em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;/</span><span class="text-[#ff7b72]" data-token>body</span><span class="text-[#c9d1d9]" data-token>&gt;</span></span></div><div class="flex" data-line><span class="w-10 shrink-0 select-none pr-4 text-right text-white/25">16</span><span class="min-w-0 truncate" style="padding-left: 0em" data-line-content><span class="text-[#c9d1d9]" data-token>&lt;/</span><span class="text-[#ff7b72]" data-token>html</span><span class="text-[#c9d1d9]" data-token>&gt;</span><span class="ml-px inline-block h-[1.1em] w-[2px] translate-y-[0.2em] animate-pulse" style="background-color: #ff9f0a" data-caret></span></span></div></pre>
+                      <div class="flex h-6 shrink-0 items-center justify-between bg-black/15 px-4 text-[11px] text-white/45">
+                        <span>main</span>
+                        <span>HTML · UTF-8</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="absolute inset-0 bg-m-bg" style="opacity: 0" data-hero-lightup></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cinematic grade: fades away as the camera reaches the screen. -->
+          <div class="pointer-events-none absolute inset-0" data-hero-grade>
+            <div class="absolute inset-0 bg-[radial-gradient(120%_90%_at_50%_45%,transparent_45%,rgb(0_0_0/0.5)_100%)]"></div>
+            <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent"></div>
+            <div class="grain absolute inset-0 opacity-[0.06] mix-blend-overlay"></div>
+          </div>
+
+          <div class="absolute inset-x-0 bottom-[14svh] px-6 md:bottom-[12svh] md:px-12" data-hero-title>
+            <div class="mb-5 text-white/75"><span class="text-sm tracking-wide text-[#d2d2d7] md:text-[1rem]">Developer · Designer · Problem Solver</span></div>
+            <h1 class="text-white text-[26vw] font-semibold leading-[0.8] tracking-[-0.07em] md:text-[15vw]">Jop Mörs.</h1>
+          </div>
+
+          <div class="pointer-events-none absolute inset-x-0 bottom-[10svh] flex justify-center px-6" style="opacity: 0" data-hero-beat="0.12,0.3">
+            <div class="lg flex items-baseline gap-4 rounded-full px-6 py-3 text-white">
+              <span class="font-mono text-xs text-white/50">01</span>
+              <span class="text-xl font-medium tracking-tight sm:text-2xl">Developer</span>
+            </div>
+          </div>
+          <div class="pointer-events-none absolute inset-x-0 bottom-[10svh] flex justify-center px-6" style="opacity: 0" data-hero-beat="0.32,0.5">
+            <div class="lg flex items-baseline gap-4 rounded-full px-6 py-3 text-white">
+              <span class="font-mono text-xs text-white/50">02</span>
+              <span class="text-xl font-medium tracking-tight sm:text-2xl">Designer</span>
+            </div>
+          </div>
+          <div class="pointer-events-none absolute inset-x-0 bottom-[10svh] flex justify-center px-6" style="opacity: 0" data-hero-beat="0.52,0.7">
+            <div class="lg flex items-baseline gap-4 rounded-full px-6 py-3 text-white">
+              <span class="font-mono text-xs text-white/50">03</span>
+              <span class="text-xl font-medium tracking-tight sm:text-2xl">Problem Solver</span>
+            </div>
+          </div>
+
+          <div class="absolute bottom-24 right-6 hidden items-center gap-3 text-xs uppercase tracking-[0.25em] text-white/60 md:right-12 md:flex" data-hero-hint>
+            <span class="h-px w-10 bg-white/40"></span>
+            Scroll to enter
+          </div>
+        </div>
+      </section>
+      <section id="statement" class="relative px-6 pb-32 pt-24 md:px-12 md:pb-48 md:pt-32">
+        <div class="mx-auto max-w-6xl">
+          <p class="mb-6 flex items-center gap-3 text-[13px] font-medium uppercase tracking-[0.2em] text-m-label"><span class="h-px w-8 bg-m-label/50"></span>Jop Mörs, in one sentence</p>          <p class="flex flex-wrap text-balance text-[2.4rem] font-semibold leading-[1.08] tracking-[-0.035em] sm:text-6xl md:text-7xl lg:text-[5.5rem]" data-scroll-words>
+            <span class="mr-[0.25em]" style="opacity: 0.16" data-word>I</span>
+            <span class="mr-[0.25em]" style="opacity: 0.16" data-word>build</span>
+            <span class="mr-[0.25em]" style="opacity: 0.16" data-word>modern</span>
+            <span class="mr-[0.25em]" style="opacity: 0.16" data-word>digital</span>
+            <span class="mr-[0.25em]" style="opacity: 0.16" data-word>experiences</span>
+            <span class="mr-[0.25em]" style="opacity: 0.16" data-word>with</span>
+            <span class="mr-[0.25em]" style="opacity: 0.16" data-word>a</span>
+            <span class="mr-[0.25em]" style="opacity: 0.16" data-word>focus</span>
+            <span class="mr-[0.25em]" style="opacity: 0.16" data-word>on</span>
+            <span class="mr-[0.25em]" style="opacity: 0.16" data-word>design,</span>
+            <span class="mr-[0.25em]" style="opacity: 0.16" data-word>performance</span>
+            <span class="mr-[0.25em]" style="opacity: 0.16" data-word>and</span>
+            <span class="mr-[0.25em]" style="opacity: 0.16" data-word>usability.</span>
+          </p>
+        </div>
+      </section>
+      <section id="about" class="px-6 py-32 md:px-12 md:py-48">
+        <div class="mx-auto max-w-6xl">
+          <p class="mb-6 flex items-center gap-3 text-[13px] font-medium uppercase tracking-[0.2em] text-m-label"><span class="h-px w-8 bg-m-label/50"></span>About me</p>          <div class="grid gap-14 md:grid-cols-[0.8fr_1.2fr] md:gap-20">
+            <div class="flex flex-col gap-6" data-reveal="left">
+              <img src="assets/img/about/portrait_color.jpeg" alt="Jop Mörs in front of the Duomo in Milan" width="675" height="900" loading="lazy" class="about-portrait w-full rounded-[28px]">
+              <dl class="grid grid-cols-2 gap-x-6 gap-y-5 px-1 pt-2">
+                <div>
+                  <dt class="text-xs font-medium uppercase tracking-[0.18em] text-m-label">Based in</dt>
+                  <dd class="mt-1.5 tracking-tight">Utrecht &amp; Limburg, NL</dd>
+                </div>
+                <div>
+                  <dt class="text-xs font-medium uppercase tracking-[0.18em] text-m-label">Studying</dt>
+                  <dd class="mt-1.5 tracking-tight">MSc Business Informatics</dd>
+                </div>
+                <div>
+                  <dt class="text-xs font-medium uppercase tracking-[0.18em] text-m-label">Speaks</dt>
+                  <dd class="mt-1.5 tracking-tight">Dutch · English</dd>
+                </div>
+                <div>
+                  <dt class="text-xs font-medium uppercase tracking-[0.18em] text-m-label">Interested in</dt>
+                  <dd class="mt-1.5 tracking-tight">Process mining · RL · web</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="md:pt-4">
+              <h2 class="text-5xl font-semibold tracking-[-0.045em] md:text-7xl" data-reveal>I&#039;m Jop. <span class="text-m-muted font-[family-name:var(--font-serif)] font-normal italic">I like the intersections.</span></h2>
+              <div class="mt-10 space-y-6 text-lg leading-relaxed text-m-muted" data-reveal>
+                <p>I studied Information Science at Utrecht University and stayed on for a master&#039;s in Business Informatics. What keeps pulling me back is the same in every project on this page: Making small parts of life that little bit more easy, efficient, or just more beautiful. The interesting problem is almost never inside one layer, it is where two of them meet.</p>
+                <p>In my thesis it was where game theory meets process data: a reward that fires at the wrong moment makes every algorithm look identical. In Spindle (see projects) it was making an app that combines nostalgia and functionality for the click wheel, which turns out to be physics rather than design.</p>
+                <p>I build things end to end, I use Python, Swift, JS, PHP, SQL, CSS, and I read my own results, including the ones that say something did not work. Two of the three algorithms in my thesis failed, and those failures were more interesting than the success.</p>
+                <p>Next to my studies, I work with data and Power BI at Zuyderland, and occasionally, I build websites for clients. Outside of that: American football, Fitness, Music and Games interest me. Thus those are usually the domains I end up building things for. Either for hobby or for given Projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="practice" class="px-6 py-32 md:px-12 md:py-44">
+        <div class="mx-auto max-w-6xl">
+          <p class="mb-6 flex items-center gap-3 text-[13px] font-medium uppercase tracking-[0.2em] text-m-label"><span class="h-px w-8 bg-m-label/50"></span>What I do</p>          <div class="mt-6 grid gap-10 md:grid-cols-2 md:gap-16">
+            <div class="relative aspect-square overflow-hidden rounded-[28px] bg-m-surface md:sticky md:top-[12svh] md:aspect-auto md:h-[76svh]" data-field-panel>
+              <div class="absolute inset-0" data-field-layer>
+                <div class="relative h-full w-full">
+                  <canvas aria-hidden="true" class="absolute inset-0 h-full w-full" data-field-canvas></canvas>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="flex min-h-[60svh] flex-col justify-center border-t border-m-line/10 py-12 md:min-h-[76svh]" data-capability data-variant="rings" data-seed="5" data-tint="232 221 204" style="--tint: 232 221 204">
+                <span class="font-mono text-sm text-m-label">01 / 03</span>
+                <h3 class="mt-4 text-6xl font-semibold tracking-[-0.05em] md:text-8xl">Design</h3>
+                <p class="mt-6 max-w-md text-3xl leading-tight md:text-4xl font-[family-name:var(--font-serif)] font-normal italic">Work out what it should do, and how it should feel.</p>
+                <p class="mt-6 max-w-md leading-relaxed text-m-muted">Layout, typography and motion treated as part of the engineering, not an afterthought. I think its a shame when a program has a lot of features that nobody wants or needs and therefore nobody uses. Thats why I want to speak to the end users first, then think of a solution, and discussing what I think could be usefull and possible.</p>
+              </div>
+              <div class="flex min-h-[60svh] flex-col justify-center border-t border-m-line/10 py-12 md:min-h-[76svh]" data-capability data-variant="ridges" data-seed="2" data-tint="206 218 238" style="--tint: 206 218 238">
+                <span class="font-mono text-sm text-m-label">02 / 03</span>
+                <h3 class="mt-4 text-6xl font-semibold tracking-[-0.05em] md:text-8xl">Application</h3>
+                <p class="mt-6 max-w-md text-3xl leading-tight md:text-4xl font-[family-name:var(--font-serif)] font-normal italic">Websites and apps, built end to end.</p>
+                <p class="mt-6 max-w-md leading-relaxed text-m-muted">Build software that is useful, reliable, and feels right to use. I enjoy working across the stack, from shaping the interface and user experience to building the logic behind it. Whether it is a website, application, or a native tool, I focus on keeping the technology purposeful rather than adding complexity for its own sake. The Front-end craft in HTML, CSS and JavaScript, backed by PHP and Python, and native apps in Swift.</p>
+              </div>
+              <div class="flex min-h-[60svh] flex-col justify-center border-t border-m-line/10 py-12 md:min-h-[76svh]" data-capability data-variant="network" data-seed="9" data-tint="207 230 215" style="--tint: 207 230 215">
+                <span class="font-mono text-sm text-m-label">03 / 03</span>
+                <h3 class="mt-4 text-6xl font-semibold tracking-[-0.05em] md:text-8xl">Data</h3>
+                <p class="mt-6 max-w-md text-3xl leading-tight md:text-4xl font-[family-name:var(--font-serif)] font-normal italic">Turn what actually happens into decisions.</p>
+                <p class="mt-6 max-w-md leading-relaxed text-m-muted">Make sense of what is happening and use it to make better decisions. I work with data from collection and modelling to analysis and visualisation, looking for patterns, inefficiencies, and insights that are actually useful. Sometimes the most valuable result is discovering that an approach does not work, and understanding why.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="work" class="relative px-3 pb-24 md:px-6">
+        <div class="mx-auto mb-16 max-w-6xl px-3 md:mb-24 md:px-6">
+          <p class="mb-6 flex items-center gap-3 text-[13px] font-medium uppercase tracking-[0.2em] text-m-label"><span class="h-px w-8 bg-m-label/50"></span>Selected work</p>          <h2 class="text-5xl font-semibold tracking-[-0.04em] md:text-8xl" data-reveal>Shipped &amp; Developing.</h2>
+        </div>
+
+        <div class="mx-auto mb-8 flex max-w-6xl items-center gap-4 px-3 text-[13px] font-medium uppercase tracking-[0.2em] text-m-label md:px-6">Launched<span class="font-mono tracking-normal text-m-muted">02</span><span class="h-px flex-1 bg-m-line/15"></span></div>        <div class="flex flex-col gap-6">
+          <article class="lg relative mx-auto flex min-h-[92svh] w-full max-w-[110rem] flex-col justify-between gap-10 overflow-hidden p-6 md:p-12" style="transform: scale(0.9); border-radius: 48px; --tint: 92 84 200" data-launch>
+            <div class="project-glow" aria-hidden="true"></div>
+            <div class="relative flex items-start justify-between gap-6">
+              <span class="font-mono text-sm text-m-muted">01 / 02</span>
+              <span class="lg inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium tracking-wide text-m-label">
+                <span class="h-1.5 w-1.5 rounded-full bg-[#30d158]"></span>
+                Launched · v2.5.0              </span>
+            </div>
+
+            <div class="relative grid items-center gap-10 md:grid-cols-[1fr_1.15fr] md:gap-16">
+              <div>
+                <img src="assets/img/projects/spindle/icon.png" alt="" width="512" height="512" loading="lazy" class="project-icon mb-6">
+                <h3 class="text-[18vw] font-semibold leading-[0.85] tracking-[-0.06em] md:text-[8vw]">Spindle</h3>
+              </div>
+
+      <div class="ipod-stage mx-auto w-[min(62vw,320px)] md:w-[min(26vw,340px)]" data-ipod role="group" aria-label="Spindle, a working demo player">
+        <div class="ipod lg" data-ipod-body>
+          <div class="ipod__sheen"></div>
+          <div class="ipod__screen" data-ipod-screen>
+            <div class="ipod__art" data-ipod-art></div>
+            <div class="ipod__status"><svg viewBox="0 0 16 12" fill="currentColor" aria-hidden="true"><rect x="0" y="7" width="2.6" height="5" rx=".6"/><rect x="4.5" y="4.6" width="2.6" height="7.4" rx=".6"/><rect x="9" y="2.2" width="2.6" height="9.8" rx=".6"/><rect x="13.4" y="0" width="2.6" height="12" rx=".6"/></svg><span class="ipod__state" data-ipod-state><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg></span></div>
+            <div class="ipod__meta" data-ipod-meta>
+              <p class="ipod__title" data-ipod-title aria-live="polite">Night Drive</p>
+              <p class="ipod__artist" data-ipod-artist>Spindle</p>
+              <div class="ipod__seek" data-ipod-seek>
+                <div class="ipod__progress"><span style="width: 33%" data-ipod-progress></span></div>
+                <div class="ipod__times"><span data-ipod-elapsed>1:24</span><span data-ipod-remaining>-2:51</span></div>
+              </div>
+              <div class="ipod__volume" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 9h4l5-4v14l-5-4H4z"/></svg><div class="ipod__progress"><span data-ipod-volume></span></div><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 9h4l5-4v14l-5-4H3z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div>
+            </div>
+            <div class="ipod__glare"></div>
+            <div class="ipod__list" data-ipod-list>
+              <p class="ipod__list-title" data-ipod-list-title></p>
+              <ul data-ipod-list-items></ul>
+            </div>
+          </div>
+          <div class="ipod__wheel lg" data-ipod-wheel data-lenis-prevent-wheel tabindex="0" aria-label="Click wheel. Scroll or drag around it, or use the arrow keys.">
+            <button type="button" class="ipod__menu" data-ipod-action="menu" aria-label="Menu">MENU</button>
+            <button type="button" class="ipod__previous" data-ipod-action="previous" aria-label="Previous track"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h2.2v14H6zM20 5v14l-10.5-7z"/></svg></button>
+            <button type="button" class="ipod__next" data-ipod-action="next" aria-label="Next track"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M15.8 5H18v14h-2.2zM4 5v14l10.5-7z"/></svg></button>
+            <button type="button" class="ipod__note" data-ipod-action="now-playing" aria-label="Now playing"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="12.6" y="4" width="2.1" height="12.5" rx=".5"/><path d="M12.6 4h6.2v3.1h-6.2z"/><ellipse cx="10.3" cy="16.6" rx="3.6" ry="2.8" transform="rotate(-22 10.3 16.6)"/></svg></button>
+            <button type="button" class="ipod__center lg" data-ipod-action="select" aria-label="Play, pause or select"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 5h3.6v14H7zM13.4 5H17v14h-3.6z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4.5v15l12.5-7.5z"/></svg></button>
+          </div>
+        </div>
+      </div>            </div>
+
+            <div class="lg lg-strong relative grid gap-6 rounded-[28px] p-6 md:grid-cols-[1.4fr_1fr_auto] md:items-end md:p-8" style="transform: translateY(120px)" data-launch-panel>
+              <p class="max-w-lg text-lg leading-relaxed text-m-text/80">A macOS desktop widget-like app shaped like a 2000s-era portable music player. It shows whatever is playing, from any app, with a working scroll wheel.</p>
+              <ul class="flex flex-wrap gap-2"><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">Swift</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">Objective-C</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">macOS</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">Spotify Web API</li></ul>              <div class="flex flex-wrap items-center gap-2">
+                <a href="projects/spindle/" class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2 text-sm font-medium text-black transition-transform duration-300 active:scale-[0.97]">View project <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                <div class="flex flex-wrap items-center gap-2"><a href="https://github.com/JopMors/Spindle" target="_blank" rel="noopener noreferrer" class="lg lg-press inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>GitHub</a><a href="https://github.com/JopMors/Spindle/releases/latest" target="_blank" rel="noopener noreferrer" class="btn-accent inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>Download</a></div>              </div>
+            </div>
+          </article>
+          <article class="lg relative mx-auto flex min-h-[92svh] w-full max-w-[110rem] flex-col justify-between gap-10 overflow-hidden p-6 md:p-12" style="transform: scale(0.9); border-radius: 48px; --tint: 190 60 80" data-launch>
+            <div class="project-glow" aria-hidden="true"></div>
+            <div class="relative flex items-start justify-between gap-6">
+              <span class="font-mono text-sm text-m-muted">02 / 02</span>
+              <span class="lg inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium tracking-wide text-m-label">
+                <span class="h-1.5 w-1.5 rounded-full bg-[#30d158]"></span>
+                BSc thesis · Grade 8.1              </span>
+            </div>
+
+            <div class="relative grid items-center gap-10 md:grid-cols-[1fr_1.15fr] md:gap-16">
+              <div>
+                <img src="assets/img/projects/thesis/uu-logo.png" alt="" width="1290" height="441" loading="lazy" class="project-icon project-icon--wide mb-6">
+                <h3 class="text-[18vw] font-semibold leading-[0.85] tracking-[-0.06em] md:text-[8vw]">MASTER-X</h3>
+              </div>
+              <div class="relative mx-auto w-[min(62vw,300px)] md:w-[min(24vw,340px)]"><div class="absolute inset-0 rounded-[6px] bg-white/80 shadow-[0_20px_60px_rgba(0,0,0,0.35)] rotate-[6deg] opacity-40"></div><div class="absolute inset-0 rounded-[6px] bg-white/80 shadow-[0_20px_60px_rgba(0,0,0,0.35)] rotate-[3deg] opacity-60"></div><img src="assets/img/projects/thesis/cover.webp" alt="Title page of the thesis: Advancing Prescriptive Process Monitoring: A Multi-Agent Reinforcement Learning Redesign" width="772" height="1000" loading="lazy" class="relative w-full rounded-[6px] shadow-[0_30px_80px_rgba(0,0,0,0.45)]"></div>            </div>
+
+            <div class="lg lg-strong relative grid gap-6 rounded-[28px] p-6 md:grid-cols-[1.4fr_1fr_auto] md:items-end md:p-8" style="transform: translateY(120px)" data-launch-panel>
+              <p class="max-w-lg text-lg leading-relaxed text-m-text/80">My BSc thesis: a multi-agent reinforcement learning redesign for prescriptive process monitoring. Every employee in a business process becomes an agent that decides whether to volunteer for the next task. Main finding: when the reward fires matters more than which algorithm you pick.</p>
+              <ul class="flex flex-wrap gap-2"><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">Python</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">PyTorch</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">PettingZoo</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">MAPPO · QMIX · COMA</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">Process mining</li></ul>              <div class="flex flex-wrap items-center gap-2">
+                <a href="projects/thesis/" class="inline-flex items-center gap-2 rounded-full bg-white px-5 py-2 text-sm font-medium text-black transition-transform duration-300 active:scale-[0.97]">View project <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                <div class="flex flex-wrap items-center gap-2"><a href="https://github.com/JopMors/MASTER-X" target="_blank" rel="noopener noreferrer" class="lg lg-press inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>GitHub</a><a href="assets/docs/thesis-jop-mors.pdf" target="_blank" rel="noopener noreferrer" class="btn-accent inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>Read the thesis</a></div>              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="mt-24 md:mt-32">
+          <div class="mx-auto mb-8 flex max-w-6xl items-center gap-4 px-3 text-[13px] font-medium uppercase tracking-[0.2em] text-m-label md:px-6">Ongoing<span class="font-mono tracking-normal text-m-muted">02</span><span class="h-px flex-1 bg-m-line/15"></span></div>          <div class="mx-auto grid max-w-[110rem] gap-4 md:grid-cols-2">
+            <article class="lg flex min-h-[22rem] flex-col justify-between gap-10 rounded-[28px] p-7 md:p-9" style="--reveal-delay: 0s" data-reveal>
+              <div class="flex items-center justify-between gap-4">
+                <span class="inline-flex items-center gap-2 rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-label">
+                  <span class="relative flex h-1.5 w-1.5">
+                    <span class="absolute inset-0 animate-ping rounded-full bg-m-accent/60"></span>
+                    <span class="relative h-1.5 w-1.5 rounded-full bg-m-accent"></span>
+                  </span>
+                  In development                </span>
+                <span class="font-mono text-sm text-m-muted">01</span>
+              </div>
+              <div>
+                <h3 class="text-4xl font-semibold tracking-[-0.04em] md:text-5xl">Gargantua</h3>
+                <p class="mt-4 max-w-md leading-relaxed text-m-muted">A local-first agentic workspace for my Mac: chat, a coding agent, my Obsidian vault, my projects and local image and video generation in one app, with no cloud inference. ORBIT, its background agent, reads my most active projects and prepares recommendations and drafts on its own.</p>
+              </div>
+              <div class="flex flex-col gap-5">
+                <ul class="flex flex-wrap gap-2"><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">Next.js</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">TypeScript</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">Python</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">FastAPI</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">Ollama</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">ComfyUI</li></ul>                <div class="flex flex-wrap items-center gap-2"><span aria-disabled="true" class="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm opacity-50 border-white/10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></svg>GitHub · soon</span><span aria-disabled="true" class="inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm opacity-50 border-white/10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>Live demo · soon</span></div>              </div>
+            </article>
+            <article class="lg flex min-h-[22rem] flex-col justify-between gap-10 rounded-[28px] p-7 md:p-9" style="--reveal-delay: 0.08s" data-reveal>
+              <div class="flex items-center justify-between gap-4">
+                <span class="inline-flex items-center gap-2 rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-label">
+                  <span class="relative flex h-1.5 w-1.5">
+                    <span class="absolute inset-0 animate-ping rounded-full bg-m-accent/60"></span>
+                    <span class="relative h-1.5 w-1.5 rounded-full bg-m-accent"></span>
+                  </span>
+                  In development                </span>
+                <span class="font-mono text-sm text-m-muted">02</span>
+              </div>
+              <div>
+                <h3 class="text-4xl font-semibold tracking-[-0.04em] md:text-5xl">Hondenschool Kim</h3>
+                <p class="mt-4 max-w-md leading-relaxed text-m-muted">Client work for a dog school in Ermelo: a public website with course registration, a private members&#039; area where participants stream training videos for their own courses, and an admin back office with a dashboard, CSV export and user roles.</p>
+              </div>
+              <div class="flex flex-col gap-5">
+                <ul class="flex flex-wrap gap-2"><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">PHP</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">MySQL</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">JavaScript</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">Node.js</li><li class="rounded-full bg-m-text/[0.08] px-3 py-1 text-xs text-m-text/80">SQLite</li></ul>                <div class="flex flex-wrap items-center gap-2"><a href="https://hondenschoolkim.nl" target="_blank" rel="noopener noreferrer" class="btn-accent inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>Go to website</a></div>              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="capabilities" class="relative overflow-hidden text-white" data-capabilities>
+        <div class="absolute inset-0" data-parallax-photo>
+          <img src="assets/img/bay-bridge-muted.webp" alt="The Bay Bridge and the San Francisco skyline at dusk" loading="lazy" class="absolute inset-0 h-full w-full object-cover object-[35%_50%]">
+        </div>
+        <!-- Blend the photograph into the page above and below. -->
+        <div class="absolute inset-x-0 top-0 h-56 bg-gradient-to-b from-m-bg to-transparent"></div>
+        <div class="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-m-bg to-transparent"></div>
+
+        <div class="relative mx-auto max-w-6xl px-6 py-48 md:px-12 md:py-64">
+          <p class="mb-6 flex items-center gap-3 text-[13px] font-medium uppercase tracking-[0.2em] text-m-label"><span class="h-px w-8 bg-m-label/50"></span>Capabilities</p>          <h2 class="capabilities-heading text-balance text-3xl leading-tight md:text-5xl font-[family-name:var(--font-serif)] font-normal italic" data-reveal>The toolkit behind each step.</h2>
+          <div class="grid gap-4 md:grid-cols-3">
+            <div class="lg lg-dark capability-card flex flex-col justify-between rounded-[28px] p-7" style="--reveal-delay: 0s" data-reveal>
+              <div>
+                <span class="font-mono text-sm text-white/60">01</span>
+                <h3 class="mt-2 text-4xl font-semibold tracking-[-0.03em]">Design</h3>
+              </div>
+              <ul class="tool-chips mt-8 flex flex-wrap gap-2" style="--tint: 232 221 204" aria-label="Design tools">
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">Figma</li>
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">CSS</li>
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">BPMN</li>
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">Process modelling</li>
+              </ul>
+            </div>
+            <div class="lg lg-dark capability-card flex flex-col justify-between rounded-[28px] p-7" style="--reveal-delay: 0.08s" data-reveal>
+              <div>
+                <span class="font-mono text-sm text-white/60">02</span>
+                <h3 class="mt-2 text-4xl font-semibold tracking-[-0.03em]">Application</h3>
+              </div>
+              <ul class="tool-chips mt-8 flex flex-wrap gap-2" style="--tint: 206 218 238" aria-label="Application tools">
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">HTML</li>
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">CSS</li>
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">JavaScript</li>
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">Swift</li>
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">PHP</li>
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">Python</li>
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">C#</li>
+              </ul>
+            </div>
+            <div class="lg lg-dark capability-card flex flex-col justify-between rounded-[28px] p-7" style="--reveal-delay: 0.16s" data-reveal>
+              <div>
+                <span class="font-mono text-sm text-white/60">03</span>
+                <h3 class="mt-2 text-4xl font-semibold tracking-[-0.03em]">Data</h3>
+              </div>
+              <ul class="tool-chips mt-8 flex flex-wrap gap-2" style="--tint: 207 230 215" aria-label="Data tools">
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">SQL</li>
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">Power BI</li>
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">Python</li>
+                <li class="tool-chip rounded-full px-3 py-1 text-sm">C</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-14 flex justify-center" data-reveal>
+            <div class="lg lg-dark flex h-[84px] max-w-full items-end gap-3 overflow-x-auto rounded-[28px] px-4 pb-3.5 md:overflow-visible" data-dock>
+              <div role="img" aria-label="Python" class="lg group relative grid shrink-0 place-items-center rounded-[18px]" style="width: 56px; height: 56px" data-dock-icon>
+                <img src="assets/img/logos/python.svg" alt="" width="48" height="48" class="h-1/2 w-1/2 object-contain">
+                <span class="lg lg-dark pointer-events-none absolute -top-11 left-1/2 hidden -translate-x-1/2 whitespace-nowrap rounded-full px-3 py-1 text-xs opacity-0 transition-opacity duration-200 group-hover:opacity-100 md:block">Python</span>
+              </div>
+              <div role="img" aria-label="HTML" class="lg group relative grid shrink-0 place-items-center rounded-[18px]" style="width: 56px; height: 56px" data-dock-icon>
+                <img src="assets/img/logos/html5.svg" alt="" width="48" height="48" class="h-1/2 w-1/2 object-contain">
+                <span class="lg lg-dark pointer-events-none absolute -top-11 left-1/2 hidden -translate-x-1/2 whitespace-nowrap rounded-full px-3 py-1 text-xs opacity-0 transition-opacity duration-200 group-hover:opacity-100 md:block">HTML</span>
+              </div>
+              <div role="img" aria-label="CSS" class="lg group relative grid shrink-0 place-items-center rounded-[18px]" style="width: 56px; height: 56px" data-dock-icon>
+                <img src="assets/img/logos/css3.svg" alt="" width="48" height="48" class="h-1/2 w-1/2 object-contain">
+                <span class="lg lg-dark pointer-events-none absolute -top-11 left-1/2 hidden -translate-x-1/2 whitespace-nowrap rounded-full px-3 py-1 text-xs opacity-0 transition-opacity duration-200 group-hover:opacity-100 md:block">CSS</span>
+              </div>
+              <div role="img" aria-label="PHP" class="lg group relative grid shrink-0 place-items-center rounded-[18px]" style="width: 56px; height: 56px" data-dock-icon>
+                <img src="assets/img/logos/php.svg" alt="" width="48" height="48" class="h-1/2 w-1/2 object-contain">
+                <span class="lg lg-dark pointer-events-none absolute -top-11 left-1/2 hidden -translate-x-1/2 whitespace-nowrap rounded-full px-3 py-1 text-xs opacity-0 transition-opacity duration-200 group-hover:opacity-100 md:block">PHP</span>
+              </div>
+              <div role="img" aria-label="JavaScript" class="lg group relative grid shrink-0 place-items-center rounded-[18px]" style="width: 56px; height: 56px" data-dock-icon>
+                <img src="assets/img/logos/javascript.svg" alt="" width="48" height="48" class="h-1/2 w-1/2 object-contain">
+                <span class="lg lg-dark pointer-events-none absolute -top-11 left-1/2 hidden -translate-x-1/2 whitespace-nowrap rounded-full px-3 py-1 text-xs opacity-0 transition-opacity duration-200 group-hover:opacity-100 md:block">JavaScript</span>
+              </div>
+              <div role="img" aria-label="C" class="lg group relative grid shrink-0 place-items-center rounded-[18px]" style="width: 56px; height: 56px" data-dock-icon>
+                <img src="assets/img/logos/c.svg" alt="" width="48" height="48" class="h-1/2 w-1/2 object-contain">
+                <span class="lg lg-dark pointer-events-none absolute -top-11 left-1/2 hidden -translate-x-1/2 whitespace-nowrap rounded-full px-3 py-1 text-xs opacity-0 transition-opacity duration-200 group-hover:opacity-100 md:block">C</span>
+              </div>
+              <div role="img" aria-label="C#" class="lg group relative grid shrink-0 place-items-center rounded-[18px]" style="width: 56px; height: 56px" data-dock-icon>
+                <img src="assets/img/logos/csharp.svg" alt="" width="48" height="48" class="h-1/2 w-1/2 object-contain">
+                <span class="lg lg-dark pointer-events-none absolute -top-11 left-1/2 hidden -translate-x-1/2 whitespace-nowrap rounded-full px-3 py-1 text-xs opacity-0 transition-opacity duration-200 group-hover:opacity-100 md:block">C#</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="background" class="px-6 py-32 md:px-12 md:py-48">
+        <div class="mx-auto max-w-6xl">
+          <p class="mb-6 flex items-center gap-3 text-[13px] font-medium uppercase tracking-[0.2em] text-m-label"><span class="h-px w-8 bg-m-label/50"></span>Background</p>          <h2 class="text-5xl font-semibold tracking-[-0.04em] md:text-7xl" data-reveal>Timeline.</h2>
+
+          <div class="mt-16 hidden grid-cols-[1fr_7rem_1fr] items-center text-[13px] font-medium uppercase tracking-[0.2em] text-m-label md:grid">
+            <span class="text-right">Work</span>
+            <span class="flex justify-center">
+              <span class="lg inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-[11px] normal-case tracking-normal">
+                <span class="relative flex h-2 w-2">
+                  <span class="absolute inset-0 animate-ping rounded-full bg-m-accent/60"></span>
+                  <span class="relative h-2 w-2 rounded-full bg-m-accent"></span>
+                </span>
+                Now
+              </span>
+            </span>
+            <span>Study</span>
+          </div>
+
+          <div class="relative mt-12 md:mt-4" data-spine>
+            <div class="absolute bottom-0 left-[5px] top-0 w-px bg-m-line/10 md:left-1/2"></div>
+            <div class="absolute left-[5px] top-0 w-px bg-gradient-to-b from-m-label via-m-label/70 to-m-label/0 shadow-[0_0_12px_rgba(255,255,255,0.35)] md:left-1/2" style="height: 0%" data-spine-fill></div>
+            <ol class="flex flex-col gap-8 md:gap-2">
+              <li class="relative pl-8 md:grid md:min-h-[15rem] md:grid-cols-[1fr_7rem_1fr] md:items-center md:pl-0">
+                <span aria-hidden="true" class="pointer-events-none hidden select-none text-[9rem] font-semibold leading-none tracking-[-0.06em] text-m-text/[0.05] md:row-start-1 md:block md:col-start-1 md:pr-6 md:text-right" data-reveal="rise">2026</span>
+
+                <div class="absolute left-0 top-8 md:relative md:left-auto md:top-auto md:col-start-2 md:row-start-1 md:flex md:h-full md:items-center md:justify-center">
+                  <span class="absolute top-1/2 hidden h-px w-1/2 bg-m-line/15 md:block right-0"></span>
+                  <span class="block h-[11px] w-[11px] rounded-full border border-m-label/60 bg-m-bg md:hidden"></span>
+                  <span class="relative hidden rounded-full bg-m-bg md:inline-block">
+                    <span class="lg inline-block rounded-full px-3.5 py-1.5 font-mono text-xs text-m-label">2026</span>
+                  </span>
+                </div>
+
+                <article class="py-2 md:row-start-1 md:col-start-3 md:pl-2" data-reveal="right">
+                  <div class="tl-head flex items-start gap-4">
+                    <span class="lg lg-bubble grid h-11 w-11 shrink-0 place-items-center rounded-full text-xs font-semibold tracking-wide text-m-label">UU</span>
+                    <div class="min-w-0 flex-1">
+                      <div class="tl-meta flex flex-wrap items-center gap-2 text-xs">
+                        <span class="font-medium uppercase tracking-[0.18em] text-m-label md:hidden">Study</span>
+                        <span class="font-mono text-m-muted">2026 – Present</span>
+                        <span class="inline-flex items-center gap-1.5 rounded-full lg-bubble px-2.5 py-0.5 text-m-label">
+                          <span class="h-1.5 w-1.5 rounded-full bg-m-accent"></span>
+                          Current
+                        </span>
+                      </div>
+                      <h3 class="mt-2 text-2xl font-semibold tracking-[-0.03em]">Utrecht University</h3>
+                      <p class="mt-1 text-m-muted">Master — Business Informatics</p>
+                    </div>
+                  </div>
+
+                  <div class="overflow-hidden" style="height: 0; opacity: 0" data-expand hidden>
+                    <p class="tl-body pt-4 text-sm leading-relaxed text-m-muted">A two-year master on the seam between information systems, business and software. Where the bachelor taught me how information systems work, the master is about designing and governing them inside organisations: data science and its impact on society, data-intensive systems, business process management, method engineering and requirements engineering. I want my MSc thesis to continue the process-mining line of my BSc thesis.</p>
+                  </div>
+
+                  <div class="tl-actions mt-4 flex items-center gap-6 text-sm">
+                    <span class="text-m-muted">1 year</span>
+                    <button aria-expanded="false" class="inline-flex items-center gap-1.5 text-m-label link-accent" data-expand-toggle>
+                      <span data-expand-label>More</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-500" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="relative pl-8 md:grid md:min-h-[15rem] md:grid-cols-[1fr_7rem_1fr] md:items-center md:pl-0">
+                <span aria-hidden="true" class="pointer-events-none hidden select-none text-[9rem] font-semibold leading-none tracking-[-0.06em] text-m-text/[0.05] md:row-start-1 md:block md:col-start-1 md:pr-6 md:text-right" data-reveal="rise">2025</span>
+
+                <div class="absolute left-0 top-8 md:relative md:left-auto md:top-auto md:col-start-2 md:row-start-1 md:flex md:h-full md:items-center md:justify-center">
+                  <span class="absolute top-1/2 hidden h-px w-1/2 bg-m-line/15 md:block right-0"></span>
+                  <span class="block h-[11px] w-[11px] rounded-full border border-m-label/60 bg-m-bg md:hidden"></span>
+                  <span class="relative hidden rounded-full bg-m-bg md:inline-block">
+                    <span class="lg inline-block rounded-full px-3.5 py-1.5 font-mono text-xs text-m-label">2025</span>
+                  </span>
+                </div>
+
+                <article class="py-2 md:row-start-1 md:col-start-3 md:pl-2" data-reveal="right">
+                  <div class="tl-head flex items-start gap-4">
+                    <span class="lg lg-bubble grid h-11 w-11 shrink-0 place-items-center rounded-full text-xs font-semibold tracking-wide text-m-label">BT</span>
+                    <div class="min-w-0 flex-1">
+                      <div class="tl-meta flex flex-wrap items-center gap-2 text-xs">
+                        <span class="font-medium uppercase tracking-[0.18em] text-m-label md:hidden">Study</span>
+                        <span class="font-mono text-m-muted">2025 – 2026</span>
+                      </div>
+                      <h3 class="mt-2 text-2xl font-semibold tracking-[-0.03em]">BSc Thesis</h3>
+                      <p class="mt-1 text-m-muted">Advancing Prescriptive Process Monitoring: A Multi-Agent Reinforcement Learning Redesign</p>
+                    </div>
+                  </div>
+
+                  <div class="overflow-hidden" style="height: 0; opacity: 0" data-expand hidden>
+                    <p class="tl-body pt-4 text-sm leading-relaxed text-m-muted">Sole author, supervised by Dr. ir. Claudio Di Ciccio and Dr. ir. Xixi Lu at Utrecht University. I redesigned the reward, the observation space and the algorithm comparison of MASTER, a multi-agent RL environment for assigning tasks in business processes. MAPPO closed 65% of the gap between random assignment and the best heuristic. Graded 8.1.</p>
+                  </div>
+
+                  <div class="tl-actions mt-4 flex items-center gap-6 text-sm">
+                    <a href="projects/thesis/" class="link-accent inline-flex items-center gap-1.5 text-m-text">Read about the thesis <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                    <button aria-expanded="false" class="inline-flex items-center gap-1.5 text-m-label link-accent" data-expand-toggle>
+                      <span data-expand-label>More</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-500" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="relative pl-8 md:grid md:min-h-[15rem] md:grid-cols-[1fr_7rem_1fr] md:items-center md:pl-0">
+                <span aria-hidden="true" class="pointer-events-none hidden select-none text-[9rem] font-semibold leading-none tracking-[-0.06em] text-m-text/[0.05] md:row-start-1 md:block md:col-start-3 md:pl-6" data-reveal="rise">2024</span>
+
+                <div class="absolute left-0 top-8 md:relative md:left-auto md:top-auto md:col-start-2 md:row-start-1 md:flex md:h-full md:items-center md:justify-center">
+                  <span class="absolute top-1/2 hidden h-px w-1/2 bg-m-line/15 md:block left-0"></span>
+                  <span class="block h-[11px] w-[11px] rounded-full border border-m-label/60 bg-m-bg md:hidden"></span>
+                  <span class="relative hidden rounded-full bg-m-bg md:inline-block">
+                    <span class="lg inline-block rounded-full px-3.5 py-1.5 font-mono text-xs text-m-label">2024</span>
+                  </span>
+                </div>
+
+                <article class="py-2 md:row-start-1 tl-mirror md:col-start-1 md:pr-2" data-reveal="left">
+                  <div class="tl-head flex items-start gap-4">
+                    <span class="lg lg-bubble grid h-11 w-11 shrink-0 place-items-center rounded-full text-xs font-semibold tracking-wide text-m-label">ZZ</span>
+                    <div class="min-w-0 flex-1">
+                      <div class="tl-meta flex flex-wrap items-center gap-2 text-xs">
+                        <span class="font-medium uppercase tracking-[0.18em] text-m-label md:hidden">Work</span>
+                        <span class="font-mono text-m-muted">2024 – Present</span>
+                        <span class="inline-flex items-center gap-1.5 rounded-full lg-bubble px-2.5 py-0.5 text-m-label">
+                          <span class="h-1.5 w-1.5 rounded-full bg-m-accent"></span>
+                          Current
+                        </span>
+                      </div>
+                      <h3 class="mt-2 text-2xl font-semibold tracking-[-0.03em]">Zuyderland Ziekenhuis</h3>
+                      <p class="mt-1 text-m-muted">ICT - Power BI Developer</p>
+                    </div>
+                  </div>
+
+                  <div class="overflow-hidden" style="height: 0; opacity: 0" data-expand hidden>
+                    <p class="tl-body pt-4 text-sm leading-relaxed text-m-muted">I am currently working as a Power BI Developer at Zuyderland Ziekenhuis, where I am responsible for developing and maintaining data visualization solutions to support decision-making processes within the organization. My role involves collaborating with various departments to understand their data needs and translating them into actionable insights through interactive dashboards and reports.</p>
+                  </div>
+
+                  <div class="tl-actions mt-4 flex items-center gap-6 text-sm">
+                    <span class="text-m-muted">3 years</span>
+                    <button aria-expanded="false" class="inline-flex items-center gap-1.5 text-m-label link-accent" data-expand-toggle>
+                      <span data-expand-label>More</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-500" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="relative pl-8 md:grid md:min-h-[15rem] md:grid-cols-[1fr_7rem_1fr] md:items-center md:pl-0">
+                <span aria-hidden="true" class="pointer-events-none hidden select-none text-[9rem] font-semibold leading-none tracking-[-0.06em] text-m-text/[0.05] md:row-start-1 md:block md:col-start-3 md:pl-6" data-reveal="rise">2023</span>
+
+                <div class="absolute left-0 top-8 md:relative md:left-auto md:top-auto md:col-start-2 md:row-start-1 md:flex md:h-full md:items-center md:justify-center">
+                  <span class="absolute top-1/2 hidden h-px w-1/2 bg-m-line/15 md:block left-0"></span>
+                  <span class="block h-[11px] w-[11px] rounded-full border border-m-label/60 bg-m-bg md:hidden"></span>
+                  <span class="relative hidden rounded-full bg-m-bg md:inline-block">
+                    <span class="lg inline-block rounded-full px-3.5 py-1.5 font-mono text-xs text-m-label">2023</span>
+                  </span>
+                </div>
+
+                <article class="py-2 md:row-start-1 tl-mirror md:col-start-1 md:pr-2" data-reveal="left">
+                  <div class="tl-head flex items-start gap-4">
+                    <span class="lg lg-bubble grid h-11 w-11 shrink-0 place-items-center rounded-full text-xs font-semibold tracking-wide text-m-label">UU</span>
+                    <div class="min-w-0 flex-1">
+                      <div class="tl-meta flex flex-wrap items-center gap-2 text-xs">
+                        <span class="font-medium uppercase tracking-[0.18em] text-m-label md:hidden">Work</span>
+                        <span class="font-mono text-m-muted">2023 – 2026</span>
+                      </div>
+                      <h3 class="mt-2 text-2xl font-semibold tracking-[-0.03em]">Utrecht University</h3>
+                      <p class="mt-1 text-m-muted">TA - Teaching assistant</p>
+                    </div>
+                  </div>
+
+                  <div class="overflow-hidden" style="height: 0; opacity: 0" data-expand hidden>
+                    <p class="tl-body pt-4 text-sm leading-relaxed text-m-muted">I have helped teaching and grading at bachelor level. I have done 2 periods of process modelling, 1 course or data analytics and 1 course of code</p>
+                  </div>
+
+                  <div class="tl-actions mt-4 flex items-center gap-6 text-sm">
+                    <span class="text-m-muted">3 years</span>
+                    <button aria-expanded="false" class="inline-flex items-center gap-1.5 text-m-label link-accent" data-expand-toggle>
+                      <span data-expand-label>More</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-500" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="relative pl-8 md:grid md:min-h-[15rem] md:grid-cols-[1fr_7rem_1fr] md:items-center md:pl-0">
+                <span aria-hidden="true" class="pointer-events-none hidden select-none text-[9rem] font-semibold leading-none tracking-[-0.06em] text-m-text/[0.05] md:row-start-1 md:block md:col-start-1 md:pr-6 md:text-right" data-reveal="rise">2023</span>
+
+                <div class="absolute left-0 top-8 md:relative md:left-auto md:top-auto md:col-start-2 md:row-start-1 md:flex md:h-full md:items-center md:justify-center">
+                  <span class="absolute top-1/2 hidden h-px w-1/2 bg-m-line/15 md:block right-0"></span>
+                  <span class="block h-[11px] w-[11px] rounded-full border border-m-label/60 bg-m-bg md:hidden"></span>
+                  <span class="relative hidden rounded-full bg-m-bg md:inline-block">
+                    <span class="lg inline-block rounded-full px-3.5 py-1.5 font-mono text-xs text-m-label">2023</span>
+                  </span>
+                </div>
+
+                <article class="py-2 md:row-start-1 md:col-start-3 md:pl-2" data-reveal="right">
+                  <div class="tl-head flex items-start gap-4">
+                    <span class="lg lg-bubble grid h-11 w-11 shrink-0 place-items-center rounded-full text-xs font-semibold tracking-wide text-m-label">UU</span>
+                    <div class="min-w-0 flex-1">
+                      <div class="tl-meta flex flex-wrap items-center gap-2 text-xs">
+                        <span class="font-medium uppercase tracking-[0.18em] text-m-label md:hidden">Study</span>
+                        <span class="font-mono text-m-muted">2023 – 2026</span>
+                      </div>
+                      <h3 class="mt-2 text-2xl font-semibold tracking-[-0.03em]">Utrecht University</h3>
+                      <p class="mt-1 text-m-muted">Bachelor — Information Science</p>
+                    </div>
+                  </div>
+
+                  <div class="overflow-hidden" style="height: 0; opacity: 0" data-expand hidden>
+                    <p class="tl-body pt-4 text-sm leading-relaxed text-m-muted">I have pursued a Bachelor&#039;s degree in Information Science at Utrecht University, focusing on the study of information systems, data management, and technology&#039;s impact on society. The program provides a comprehensive understanding of how information is created, processed, and utilized in various contexts.</p>
+                  </div>
+
+                  <div class="tl-actions mt-4 flex items-center gap-6 text-sm">
+                    <span class="text-m-muted">3 years</span>
+                    <button aria-expanded="false" class="inline-flex items-center gap-1.5 text-m-label link-accent" data-expand-toggle>
+                      <span data-expand-label>More</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-500" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="relative pl-8 md:grid md:min-h-[15rem] md:grid-cols-[1fr_7rem_1fr] md:items-center md:pl-0">
+                <span aria-hidden="true" class="pointer-events-none hidden select-none text-[9rem] font-semibold leading-none tracking-[-0.06em] text-m-text/[0.05] md:row-start-1 md:block md:col-start-3 md:pl-6" data-reveal="rise">2019</span>
+
+                <div class="absolute left-0 top-8 md:relative md:left-auto md:top-auto md:col-start-2 md:row-start-1 md:flex md:h-full md:items-center md:justify-center">
+                  <span class="absolute top-1/2 hidden h-px w-1/2 bg-m-line/15 md:block left-0"></span>
+                  <span class="block h-[11px] w-[11px] rounded-full border border-m-label/60 bg-m-bg md:hidden"></span>
+                  <span class="relative hidden rounded-full bg-m-bg md:inline-block">
+                    <span class="lg inline-block rounded-full px-3.5 py-1.5 font-mono text-xs text-m-label">2019</span>
+                  </span>
+                </div>
+
+                <article class="py-2 md:row-start-1 tl-mirror md:col-start-1 md:pr-2" data-reveal="left">
+                  <div class="tl-head flex items-start gap-4">
+                    <span class="lg lg-bubble grid h-11 w-11 shrink-0 place-items-center rounded-full text-xs font-semibold tracking-wide text-m-label">WM</span>
+                    <div class="min-w-0 flex-1">
+                      <div class="tl-meta flex flex-wrap items-center gap-2 text-xs">
+                        <span class="font-medium uppercase tracking-[0.18em] text-m-label md:hidden">Work</span>
+                        <span class="font-mono text-m-muted">2019 – 2024</span>
+                      </div>
+                      <h3 class="mt-2 text-2xl font-semibold tracking-[-0.03em]">Wolfhagen Maasbracht</h3>
+                      <p class="mt-1 text-m-muted">Sales Associate</p>
+                    </div>
+                  </div>
+
+                  <div class="overflow-hidden" style="height: 0; opacity: 0" data-expand hidden>
+                    <p class="tl-body pt-4 text-sm leading-relaxed text-m-muted">During my time at Wolfhagen Maasbracht, I worked as a Sales Associate, where I was responsible for assisting customers with their purchases, providing product information, and ensuring a positive shopping experience. I developed strong communication and interpersonal skills while working in a fast-paced retail environment.</p>
+                  </div>
+
+                  <div class="tl-actions mt-4 flex items-center gap-6 text-sm">
+                    <span class="text-m-muted">5 years</span>
+                    <button aria-expanded="false" class="inline-flex items-center gap-1.5 text-m-label link-accent" data-expand-toggle>
+                      <span data-expand-label>More</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-500" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>                    </button>
+                  </div>
+                </article>
+              </li>
+              <li class="relative pl-8 md:grid md:min-h-[15rem] md:grid-cols-[1fr_7rem_1fr] md:items-center md:pl-0">
+                <span aria-hidden="true" class="pointer-events-none hidden select-none text-[9rem] font-semibold leading-none tracking-[-0.06em] text-m-text/[0.05] md:row-start-1 md:block md:col-start-1 md:pr-6 md:text-right" data-reveal="rise">2017</span>
+
+                <div class="absolute left-0 top-8 md:relative md:left-auto md:top-auto md:col-start-2 md:row-start-1 md:flex md:h-full md:items-center md:justify-center">
+                  <span class="absolute top-1/2 hidden h-px w-1/2 bg-m-line/15 md:block right-0"></span>
+                  <span class="block h-[11px] w-[11px] rounded-full border border-m-label/60 bg-m-bg md:hidden"></span>
+                  <span class="relative hidden rounded-full bg-m-bg md:inline-block">
+                    <span class="lg inline-block rounded-full px-3.5 py-1.5 font-mono text-xs text-m-label">2017</span>
+                  </span>
+                </div>
+
+                <article class="py-2 md:row-start-1 md:col-start-3 md:pl-2" data-reveal="right">
+                  <div class="tl-head flex items-start gap-4">
+                    <span class="lg lg-bubble grid h-11 w-11 shrink-0 place-items-center rounded-full text-xs font-semibold tracking-wide text-m-label">CC</span>
+                    <div class="min-w-0 flex-1">
+                      <div class="tl-meta flex flex-wrap items-center gap-2 text-xs">
+                        <span class="font-medium uppercase tracking-[0.18em] text-m-label md:hidden">Study</span>
+                        <span class="font-mono text-m-muted">2017 – 2023</span>
+                      </div>
+                      <h3 class="mt-2 text-2xl font-semibold tracking-[-0.03em]">Connect College</h3>
+                      <p class="mt-1 text-m-muted">VWO - Science &amp; Technology</p>
+                    </div>
+                  </div>
+
+                  <div class="overflow-hidden" style="height: 0; opacity: 0" data-expand hidden>
+                    <p class="tl-body pt-4 text-sm leading-relaxed text-m-muted">Completed my pre-university education (VWO) at Connect College, specializing in Science &amp; Technology. The curriculum provided a strong foundation in mathematics, physics, and science/biology, preparing me for further studies in the field of information science and technology.</p>
+                  </div>
+
+                  <div class="tl-actions mt-4 flex items-center gap-6 text-sm">
+                    <span class="text-m-muted">6 years</span>
+                    <button aria-expanded="false" class="inline-flex items-center gap-1.5 text-m-label link-accent" data-expand-toggle>
+                      <span data-expand-label>More</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4 transition-transform duration-500" aria-hidden="true"><path d="M5 12h14"></path><path d="M12 5v14"></path></svg>                    </button>
+                  </div>
+                </article>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="relative min-h-[100svh] overflow-hidden px-6 pt-32 text-white md:px-12" data-contact>
+        <div class="absolute inset-0" style="transform: scale(1.25)" data-contact-photo>
+          <img src="assets/img/workspace/master.webp" alt="" loading="lazy" class="absolute inset-0 h-full w-full object-cover object-[41%_50%]">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-m-bg via-black/40 to-black/85"></div>
+
+        <div class="relative mx-auto grid max-w-6xl gap-12 pt-[18svh] lg:grid-cols-[1fr_1.05fr] lg:items-end">
+          <div>
+            <p class="mb-6 flex items-center gap-3 text-[13px] font-medium uppercase tracking-[0.2em] text-white/70">
+              <span class="h-px w-8 bg-white/50"></span>
+              Contact
+            </p>
+            <h2 class="text-balance text-5xl font-semibold leading-[0.95] tracking-[-0.045em] md:text-8xl" data-reveal>Let&apos;s build something.</h2>
+            <div class="mt-10 flex flex-wrap gap-2">
+              <a href="mailto:jop.mors@icloud.com" rel="noopener noreferrer" class="lg lg-press channel-btn inline-flex rounded-full px-5 py-2.5 text-sm font-medium">
+                <span class="channel-btn__fill" aria-hidden="true"></span>
+                <span class="channel-btn__label inline-flex items-center gap-2">
+                  jop.mors@icloud.com                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>                </span>
+              </a>
+              <a href="https://www.linkedin.com/in/jop-m%C3%B6rs-5170b5294/?skipRedirect=true" target="_blank" rel="noopener noreferrer" class="lg lg-press channel-btn inline-flex rounded-full px-5 py-2.5 text-sm font-medium">
+                <span class="channel-btn__fill" aria-hidden="true"></span>
+                <span class="channel-btn__label inline-flex items-center gap-2">
+                  LinkedIn                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>                </span>
+              </a>
+              <a href="https://github.com/JopMors" target="_blank" rel="noopener noreferrer" class="lg lg-press channel-btn inline-flex rounded-full px-5 py-2.5 text-sm font-medium">
+                <span class="channel-btn__fill" aria-hidden="true"></span>
+                <span class="channel-btn__label inline-flex items-center gap-2">
+                  GitHub                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>                </span>
+              </a>
+            </div>
+          </div>
+
+          <div class="lg lg-strong overflow-hidden rounded-[28px] p-6 sm:p-9" data-contact-form>
+            <form action="https://formspree.io/f/xrpbndan" method="POST" class="form-view flex flex-col gap-3" data-form>
+              <input type="hidden" name="_subject" value="New message from your portfolio">
+              <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="hidden">
+              <div class="grid gap-3 sm:grid-cols-2 sm:gap-8">
+                <input required name="name" aria-label="Your name" placeholder="Name" class="w-full bg-transparent px-0 py-3 text-[1rem] outline-none transition-colors border-0 border-b placeholder:opacity-50 border-white/15 placeholder:text-white focus:border-white/60">
+                <input required type="email" name="email" aria-label="Your email" placeholder="Email" class="w-full bg-transparent px-0 py-3 text-[1rem] outline-none transition-colors border-0 border-b placeholder:opacity-50 border-white/15 placeholder:text-white focus:border-white/60">
+              </div>
+              <textarea required rows="4" name="message" aria-label="Your message" placeholder="What are you working on?" class="w-full bg-transparent px-0 py-3 text-[1rem] outline-none transition-colors border-0 border-b placeholder:opacity-50 border-white/15 placeholder:text-white focus:border-white/60 resize-none"></textarea>
+              <p class="mt-2 text-sm" style="color: #ff6961" role="alert" hidden data-form-error></p>
+              <button type="submit" class="mt-5 inline-flex items-center gap-2 self-start rounded-full px-6 py-3 text-sm font-medium transition-transform duration-300 active:scale-[0.97] disabled:opacity-60 bg-m-accent text-m-on-accent">
+                <span data-submit-label>Send message</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>              </button>
+            </form>
+            <div class="form-view hidden min-h-[18rem] flex-col items-start justify-end gap-3" data-form-done>
+              <span class="grid h-11 w-11 place-items-center rounded-full bg-m-accent text-m-on-accent"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg></span>
+              <p class="text-2xl font-medium tracking-tight">Message sent.</p>
+              <p class="opacity-60">Thanks — I&apos;ll get back to you soon.</p>
+            </div>
+          </div>
+        </div>
+
+        <footer class="relative mx-auto mt-32 flex max-w-6xl flex-wrap items-center justify-between gap-2 border-t border-white/10 pb-24 pt-6 text-sm text-white/50">
+          <span>© 2026 Jop Mörs</span>
+          <span>Designed and built by Jop Mörs.</span>
+        </footer>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>
