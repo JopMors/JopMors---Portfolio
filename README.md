@@ -1,4 +1,4 @@
-# Jop Mörs — Portfolio
+# Jop Mörs - Portfolio
 
 The static (HTML · CSS · JS) build of my portfolio, served by GitHub Pages at [jopmors.com](https://jopmors.com).
 
