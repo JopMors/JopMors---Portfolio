@@ -65,8 +65,9 @@ export function initNav(header) {
     pill.style.opacity = "1";
   };
 
-  // On a sub-page (e.g. a project page) the current item is fixed.
-  if (header.dataset.navCurrent) {
+  // On a sub-page (e.g. a project page) the current item is fixed; an empty value
+  // (e.g. the privacy page) means no item is highlighted.
+  if (header.dataset.navCurrent !== undefined) {
     setActive(header.dataset.navCurrent);
     window.addEventListener("resize", () => setActive(header.dataset.navCurrent));
     return;
